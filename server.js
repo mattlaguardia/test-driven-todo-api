@@ -53,7 +53,7 @@ app.get('/api/todos/search', function search(req, res) {
    for (var i = 0; i < todos.length; i++){
      if (search === todos[i].task){
        console.log("found it");
-       empty.push(todos[i].task);
+       empty.push(todos[i]);
      }
      console.log(empty);
    }
